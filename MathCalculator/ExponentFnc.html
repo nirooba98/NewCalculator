@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Math Calculater</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style>
+      body{
+        background-color: white;
+      }
+    </style>
+     <script>
+     function exponent() {
+           var x5=Number(document.getElementById("N11").value);
+           var y5=Number(document.getElementById("N12").value);
+           var z5= x5**y5;
+            document.getElementById("result-5").value=z5;
+        }
+      </script>
+  </head>
+  <body>
+    <nav class="navbar bg-success">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a href="#" class="navbar-brand">SN Solutions</a>
+        </div>
+        <ul class="nav navbar-nav bg-success">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">S.I Calculator</a></li>
+          <li><a href="#">C.I Calculator</a></li>
+          <li><a href="#">Math Calculator</a></li>
+          <li><a href="#">About</a></li>    
+        </ul>
+      </div>
+    </nav>
+    <div class="container-fluid">
+      <h1 class="text-center text-success">Welcome!</h1>
+      <h1 class="text-center text-warning">Perform any arithmetic functions you want!</h1>
+    </div>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-8">
+          <h2 class="text-success">Choose the Mathematic function you want to perform:</h2>
+        </div>
+        <div class="col-md-2" style="padding-top:23px;">
+          <div class="btn-group">
+            <button class="btn btn-success">Choose</button>
+            <button class="btn btn-success dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="Additionfnc.html">Addition</a></li>
+              <li><a href="subractionFnc.html">Subraction</a></li>
+              <li><a href="MultiplicationFnc.html">Multiplication</a></li>
+              <li><a href="DivisionFnc.html">Division</a></li>
+              <li><a href="ModulusFnc.html">Modulus</a></li>
+              <li><a href="ExponentFnc.html">Exponent</a></li>
+            </ul>
+          </div>
+          </div>
+          <div class="col-md-2" style="padding-top:23px;">
+            <a href="MathCalculator.html">
+            <button class="btn btn-warning" style="padding-right:5px;">
+              <i class="glyphicon glyphicon-refresh"></i>
+            </button></a>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-12">
+            <h1 class="text-success">Find the exponent value of any number.</h1>
+          </div>
+          </div>
+          <div class="row">
+              <div class="col-md-4">
+                <label for="N11">Enter the number:</label>
+              </div>
+              <div class="col-md-8">
+                <input type="number" id="N11" name="N11">
+              </div>
+          </div>
+          <div class="row" style="padding-top: 10px;">
+            <div class="col-md-4">
+              <label for="N12">Enter the power value:</label>
+            </div>
+            <div class="col-md-8">
+              <input type="number" id="N12" name="N12">
+            </div>
+        </div>
+      </div>
+      <br>
+      <div class="container-fluid">
+          <div class="row">
+              <div class="col-md-4">
+                <button class="btn btn-danger" onclick="exponent()">Calculate</button>
+              </div>
+              <div class="col-md-8">
+              <input id="result-5">
+            </div>
+          </div> 
+      </div>
+      
+      
+    
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>

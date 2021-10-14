@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Math Calculater</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style>
+      body{
+        background-color: white;
+      }
+    </style>
+     <script>
+      function addition() {
+         var x=Number(document.getElementById("N1").value);
+         var y=Number(document.getElementById("N2").value);
+         var z= x+y;
+          
+      }
+      </script>
+  </head>
+  <body>
+    <nav class="navbar bg-success">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a href="#" class="navbar-brand">SN Solutions</a>
+        </div>
+        <ul class="nav navbar-nav bg-success">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">S.I Calculator</a></li>
+          <li><a href="#">C.I Calculator</a></li>
+          <li><a href="#">Math Calculator</a></li>
+          <li><a href="#">About</a></li>    
+        </ul>
+      </div>
+    </nav>
+    <div class="container-fluid">
+      <h1 class="text-center text-success">Welcome!</h1>
+      <h1 class="text-center text-warning">Perform any arithmetic functions you want!</h1>
+    </div>
+      </div>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-12">
+            <h1 class="text-success text-center">Enter any two numbers.</h1>
+          </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4">
+              </div>
+              <div class="col-md-2">
+                <label for="N1">Enter the first number:</label><br>
+                <input type="number" id="N1" name="N1">
+              </div>
+              <div class="col-md-2">
+                <label for="N2">Enter the second number:</label><br>
+                <input type="number" id="N2" name="N2">
+              </div>
+              <div class="col-md-4">
+                <div class="btn-group btn-group-justified" style="padding: 10px;">
+                    <div class="btn-group"><button type="button" onclick="addition()" class="btn btn-danger" style="padding: 10px;">+</button></div>
+                    <div class="btn-group"><button type="button" class="btn btn-danger" style="padding: 10px;">-</button></div>
+                    <div class="btn-group"><button type="button" class="btn btn-danger" style="padding: 10px;">*</button></div>
+                    <div class="btn-group"><button type="button" class="btn btn-danger" style="padding: 10px;">/</button></div>
+                    <div class="btn-group"><button type="button" class="btn btn-danger" style="padding: 10px;">%</button></div>
+                    <div class="btn-group"><button type="button" class="btn btn-danger" style="padding: 10px;">^</button></div>
+                </div> 
+              </div>
+          </div>
+      </div>
+      <br>
+      <div class="container-fluid">
+          <div class="row">
+              <div class="col-md-5">
+              </div>
+          <div class="col-md-2">
+              <input id="result">
+            </div>
+          <div class="col-md-5">
+            <button class="btn btn-danger" onclick="result1()">Calculate</button>
+          </div>
+          </div> 
+      </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
